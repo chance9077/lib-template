@@ -1,0 +1,33 @@
+{
+  "name": "lib-template",
+  "version": "1.0.0",
+  "description": "a template development library, use rollup building, karmajs testing.",
+  "main": "dist/lib.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "rollup --config rollup.config.js",
+    "test": "karma start test/karma.config.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^11.1.0",
+    "@rollup/plugin-typescript": "^8.1.0",
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.2.0",
+    "chai": "^4.2.0",
+    "karma": "^6.0.1",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-mocha": "^2.0.1",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-rollup-preprocessor": "^7.0.5",
+    "mocha": "^8.2.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.37.0",
+    "rollup-plugin-progress": "^1.1.2",
+    "tslib": "^2.1.0",
+    "typescript": "^4.1.3"
+  }
+}
